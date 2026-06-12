@@ -1,0 +1,55 @@
+.header{
+    width:100%;
+    height:64px;
+    padding:0 32px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    border-bottom:1px solid #e5e7eb;
+    background:#fff;
+}
+
+.logo{
+    font-size:22px;
+    font-weight:800;
+    color:#111827;
+    text-decoration:none;
+    letter-spacing:1px;
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.nav p {
+    font-size: 12px;
+    color:#374151;
+}
+
+.nav span {
+    font-size: 12px;
+    font-weight: 700;
+    color:#374151;
+}
+
+.nav a {
+    font-size:12px;
+    font-weight:600;
+    color:#374151;
+    text-decoration:none;
+}
+
+.logoutBtn{
+    background:none;
+    border:none;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    transition: .3s;
+}
+
+.logoutBtn:hover {
+    font-weight: 700;
+}
