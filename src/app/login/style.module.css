@@ -1,10 +1,20 @@
+.wrap {
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+
+    background-image:url('/images/ui/dugout_login.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
 .main{
-    min-height:calc(100vh - 128px);
+    min-height:calc(100vh - 80px);
     display:flex;
     align-items:center;
     justify-content:center;
     padding:40px 20px;
-    background:hsl(210, 20%, 98%);
 }
 
 .card{
@@ -14,8 +24,8 @@
     border:1px solid #e5e7eb;
     border-radius:18px;
     background:#fff;
+    opacity:0.93;
     text-align:center;
-    box-shadow:0 10px 30px rgba(0,0,0,.06);
 }
 
 .title{

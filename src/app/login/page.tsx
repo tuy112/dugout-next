@@ -61,7 +61,7 @@ export default function LoginPage() {
 
         
         </section>
-    </main>
+      </main>
 
       <Footer />
     </div>
