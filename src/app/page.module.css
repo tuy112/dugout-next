@@ -1,3 +1,14 @@
+.wrap {
+    /* display:flex; */
+    /* flex-direction:column; */
+    min-height:100vh;
+
+    /* background-image:url('/images/ui/dugout_login.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat; */
+}
+
 .main{
     max-width:900px;
     margin:0 auto;
