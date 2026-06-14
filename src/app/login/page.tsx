@@ -12,7 +12,8 @@ export default function LoginPage() {
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleLogin = () => {
+  const handleLogin = (e?: any) => {
+    if (e) e.preventDefault();
     const user = loginUser.find(
       item => item.id === id && item.password === password
     );
@@ -38,7 +39,7 @@ export default function LoginPage() {
                 소셜 로그인은 추후 지원 예정입니다.
             </p>
 
-            <div className={styles.form}>
+            <form className={styles.form} onSubmit={handleLogin}>
                 <input
                 type="text"
                 placeholder="아이디"
@@ -55,9 +56,9 @@ export default function LoginPage() {
             className={styles.input}
             />
 
-            <button className={styles.submitButton} onClick={handleLogin}>로그인</button>
+            <button className={styles.submitButton} type="submit">로그인</button>
             <button className={styles.loginButton} disabled>소셜 로그인 준비중</button>
-        </div>
+        </form>
 
         
         </section>
