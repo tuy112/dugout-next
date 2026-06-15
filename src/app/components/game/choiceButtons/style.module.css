@@ -1,0 +1,59 @@
+.buttonArea {
+    padding: 0 20px 30px;
+}
+
+.choiceButton {
+    width: 100%;
+    background: #ffffff;
+    border: 2px solid #dbe4f0;
+    border-radius: 14px;
+    padding: 18px 16px;
+    margin-bottom: 12px;
+    box-shadow: none;
+    cursor: pointer;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.choiceButton:hover {
+    border-color: #2563eb;
+    background: #ffffff;
+}
+
+.choiceLeft {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.choiceBadge {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    background: #1e3a8a;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 14px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choiceText {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1e293b;
+    text-align: left;
+}
+
+.choiceArrow {
+    color: #94a3b8;
+    font-size: 20px;
+    font-weight: 700;
+    flex-shrink: 0;
+}

@@ -10,14 +10,14 @@ export default function Header() {
     const [userName, setUserName] = useState('');
 
     useEffect(() => {
-        const user = localStorage.getItem('user');
+        const user = sessionStorage.getItem('user');
         if (!user) return;
         const parsed = JSON.parse(user);
         setUserName(parsed.name);
     }, []);
 
     const handleLogout = () => {
-        localStorage.removeItem('user');
+        sessionStorage.removeItem('user');
         router.push('/login');
         router.refresh();
     };

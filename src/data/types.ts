@@ -22,12 +22,19 @@ export interface ScenarioData {
     homeTeam: string;
     awayTeam: string;
     score: {
-        home: number;
-        away: number;
+      home: number;
+      away: number;
     };
     inning: string;
     outs: string;
     situation: string;
+    /** 메인 선택지 목록 (A/B/C/D) */
+    mainChoices: MainChoice[];
     subChoices: Record<string, SubChoice>;
     results: Record<string, ResultData>;
-}
+  }
+   
+  export interface MainChoice {
+    id: string;       // 'A' | 'B' | 'C' | 'D'
+    text: string;     // 예시 : '마운드 방문 후 이준영 유지'
+  }

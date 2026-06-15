@@ -1,0 +1,109 @@
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: #f1f5f9;
+}
+
+/* 헤더 */
+.topBar {
+    background: #1e3a8a;
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.backBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.topTitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* 선택지 타이틀 */
+.sceneTitle {
+    padding: 20px 20px 8px;
+    font-size: 17px;
+    font-weight: 700;
+    color: #1e293b;
+}
+
+/* 서브 선택지 버튼 - desc 포함 */
+.buttonArea {
+    padding: 0 20px 30px;
+}
+
+.subButton {
+    width: 100%;
+    background: white;
+    border: 2px solid #dbe4f0;
+    border-radius: 14px;
+    padding: 18px 16px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    text-align: left;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subButton:hover {
+    border-color: #2563eb;
+}
+
+.subLeft {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.subBadge {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    background: #1e3a8a;
+    color: white;
+    font-weight: 700;
+    font-size: 11px;
+    flex-shrink: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subTextBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.subText {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.subDesc {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.subArrow {
+    color: #94a3b8;
+    font-size: 20px;
+    font-weight: 700;
+    flex-shrink: 0;
+}

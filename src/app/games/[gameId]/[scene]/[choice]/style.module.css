@@ -1,0 +1,101 @@
+.container {
+    max-width: 480px;
+    margin: 0 auto;
+    min-height: 100vh;
+    background: #f1f5f9;
+}
+
+.topBar {
+    background: #1e3a8a;
+    color: white;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.backBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.topTitle {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.resultCard {
+    background: #fff;
+    margin: 20px;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.resultLabel {
+    font-size: 11px;
+    font-weight: 700;
+    color: #2563eb;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+.resultChoice {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 16px;
+}
+
+.resultText {
+    font-size: 15px;
+    color: #475569;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.pointBox {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.bottomButtons {
+    padding: 0 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.primaryButton {
+    width: 100%;
+    border: none;
+    background: #2563eb;
+    color: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.backButton {
+    width: 100%;
+    border: none;
+    background: #64748b;
+    color: #fff;
+    padding: 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
