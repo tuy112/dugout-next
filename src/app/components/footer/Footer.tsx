@@ -1,4 +1,6 @@
-import Link from 'next/link';
+'use client';
+
+// import Link from 'next/link';
 import styles from './style.module.css';
 import { usePathname } from 'next/navigation';
 
