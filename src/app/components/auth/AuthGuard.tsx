@@ -12,8 +12,7 @@ export default function AuthGuard({
   const pathname = usePathname();
 
   useEffect(() => {
-    const user = localStorage.getItem('user');
-
+    const user = sessionStorage.getItem('user');
     if (!user && pathname !== '/login') {
       router.replace('/login');
     }

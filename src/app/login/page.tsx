@@ -8,7 +8,6 @@ import styles from './style.module.css';
 
 export default function LoginPage() {
   const router = useRouter();
-
   const [id, setId] = useState('');
   const [password, setPassword] = useState('');
 
@@ -23,8 +22,7 @@ export default function LoginPage() {
       return;
     }
 
-    localStorage.setItem('user', JSON.stringify(user));
-
+    sessionStorage.setItem('user', JSON.stringify(user));
     router.push('/');
     router.refresh();
   };
