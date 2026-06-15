@@ -1,25 +1,25 @@
 import { ScenarioData } from '../../types';
 
-export const game240817: ScenarioData = {
-  id: '240817',
-  gameDate: '2024.08.17',
-  title: '광주 · 7회초',
-  homeTeam: 'KIA',
-  awayTeam: '두산',
+export const game240901: ScenarioData = {
+  id: '240901',
+  gameDate: '2024.09.01',
+  title: 'ㅇㅇ · ㅇ회초',
+  homeTeam: 'ㅇㅇ',
+  awayTeam: 'ㅇㅇ',
   score: {
-    home: 3,
-    away: 4,
+    home: 0,
+    away: 0,
   },
-  inning: '7회초 ▲',
-  outs: '1사 · 1·2루',
-  situation: '1사 1·2루 위기입니다',
+  inning: 'ㅇ회초 ▲',
+  outs: '무사 · ㅇ·ㅇ루',
+  situation: '무사 ㅇ·ㅇ루입니다',
 
   /** 메인 페이지에서 보여줄 A/B/C/D 선택지 */
   mainChoices: [
-    { id: 'A', text: '마운드 방문 후 이준영 유지' },
-    { id: 'B', text: '투수 교체' },
-    { id: 'C', text: '고의4구 → 김재환 승부' },
-    { id: 'D', text: '수비 강화' },
+    { id: 'A', text: 'A' },
+    { id: 'B', text: 'B' },
+    { id: 'C', text: 'C' },
+    { id: 'D', text: 'D' },
   ],
 
   subChoices: {
@@ -40,7 +40,7 @@ export const game240817: ScenarioData = {
       ],
     },
     C: {
-      title: '[C] 고의4구 → 김재환 승부',
+      title: '[C] 고의4구 → ㅇㅇㅇ 승부',
       options: [
         { id: 'C-1', text: '이준영 그대로 김재환', desc: 'vs김재환 .250 · 만루 .312' },
         { id: 'C-2', text: '최지민으로 교체', desc: 'vs김재환 .143⭐ · 헨리 대타 위험 ⚠' },
