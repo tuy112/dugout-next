@@ -11,15 +11,22 @@ export const game700101: ScenarioData = {
     home: 0,
     away: 0,
   },
-  inning: 'ㅇ회초 ▲',
-  outs: '무사 · ㅇ·ㅇ루',
+  inning: 'ㅇ회초',
+  outs: '무사',
   situation: '무사 ㅇ·ㅇ루입니다',
+
+  // intro - 승률
+  winProb: {
+    home: 78,   // 홈팀 승률
+    away: 22,   // 원정팀 승률
+  },
+
 
   // batter card
   batterCard: {
     name: '선수명 (좌/우타)',
     badge: '번 · 타석째',
-    todayRecord: '오늘: → → ?',
+    todayRecord: '오늘기록 : → → ',
     seasonStats: '시즌 .000 · vs좌 .000 · vs우 .000',
     situationStats: '1·2루 .000 · 만루 .000',
   },

@@ -11,15 +11,21 @@ export const game240817: ScenarioData = {
     home: 3,
     away: 4,
   },
-  inning: '7회초 ▲',
-  outs: '1사 · 1·2루',
+  inning: '7회초',
+  outs: '1사',
   situation: '1사 1·2루 위기입니다',
+
+  // intro - 승률
+  winProb: {
+    home: 78,   // 홈팀 승률
+    away: 22,   // 원정팀 승률
+  },
 
   // batter card
   batterCard: {
     name: '라모스 (우타)',
     badge: '4번 · 3타석째',
-    todayRecord: '오늘: 플라이 → 안타 → ?',
+    todayRecord: '오늘 기록 : 플라이 → 안타',
     seasonStats: '시즌 .295 · vs좌 .267 · vs우 .312',
     situationStats: '1·2루 .322 · 만루 .375',
   },
