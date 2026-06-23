@@ -16,7 +16,7 @@ export default function Home() {
 
       {/* main */}
       <main className={styles.main}>
-        <h1 className={styles.title}>명경기 감독 시뮬레이션 게임</h1>
+        <h1 className={styles.title}>▼ 아래 상황을 클릭해주세요.</h1>
         <div className={styles.grid}>
           {scenarios.map(game => (
             <Link
@@ -33,8 +33,6 @@ export default function Home() {
 
       {/* footer */}
       <Footer />
-
     </div>
-    
   );
 }
