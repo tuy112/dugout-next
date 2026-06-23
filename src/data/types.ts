@@ -64,6 +64,12 @@ export interface ScenarioData {
     outs: string;
     situation: string;
 
+    /** AI 승리 예측 확률 (합계 100) */
+    winProb: {
+      home: number;   // 홈팀 승률 (예: 22)
+      away: number;   // 원정팀 승률 (예: 78)
+    };
+
     batterCard: BatterCard;
     lineup: PlayerStat[];       // 타순 + 대타 목록
     pitcherCard: PitcherCard;
