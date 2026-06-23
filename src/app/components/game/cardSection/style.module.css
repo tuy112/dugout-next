@@ -1,0 +1,368 @@
+.btnData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: calc(100% - 32px);
+    margin: 0 16px 16px;
+    padding: 14px;
+    background: #fff;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+    cursor: pointer;
+}
+.btnData:active { opacity: 0.7; }
+
+.overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.55);
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.panel {
+    background: #fff;
+    border-radius: 20px 20px 0 0;
+    max-height: 85vh;
+    overflow-y: auto;
+}
+
+.panelHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px 12px;
+    border-bottom: 1px solid #f1f5f9;
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 1;
+}
+
+.panelTitle {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1d2e;
+}
+
+.panelClose {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f1f5f9;
+    border: none;
+    font-size: 14px;
+    color: #6b7280;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tabs {
+    display: flex;
+    padding: 12px 16px 0;
+    gap: 8px;
+}
+
+.tab {
+    flex: 1;
+    padding: 9px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 8px 8px 0 0;
+    border: none;
+    cursor: pointer;
+    background: #f1f5f9;
+    color: #9ca3af;
+}
+
+.tab.active {
+    background: #1a2b6b;
+    color: #fff;
+}
+
+.panelBody {
+    padding: 12px 16px 32px;
+    background: #f4f6fa;
+}
+
+/* main - cardSection common */
+.sectionHeader {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 16px 10px;
+}
+
+.sectionDot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+}
+.sectionDot.red { background: #e84242; }
+.sectionDot.blue { background: #2a6fdb; }
+
+.sectionLabel {
+    font-size: 12px;
+    font-weight: 700;
+    color: #374151;
+    letter-spacing: 0.04em;
+}
+
+.mainCard {
+    margin: 0 12px 12px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* cardSection - batterCard */
+.batterHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 14px 10px;
+}
+
+.batterIcon {
+    width: 38px;
+    height: 38px;
+    background: #fff0f0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.batterName {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1d2e;
+}
+
+.batterBadge {
+    display: inline-block;
+    background: #fee2e2;
+    color: #991b1b;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 20px;
+    margin-left: 6px;
+    letter-spacing: 0.02em;
+}
+
+.batterSub {
+    font-size: 11px;
+    color: #9ca3af;
+    margin-top: 2px;
+}
+
+.todayChip {
+    margin: 0 14px 10px;
+    background: #e8f4f8;
+    border-radius: 8px;
+    padding: 7px 12px;
+    font-size: 12px;
+    color: #1e6a8a;
+    font-weight: 500;
+}
+
+.statBlock {
+    padding: 0 14px 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.statRow {
+    font-size: 12px;
+    color: #4b5563;
+    line-height: 1.5;
+}
+
+.statLabel {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 600;
+    color: #9ca3af;
+    margin-right: 4px;
+    letter-spacing: 0.04em;
+}
+
+.cardDivider {
+    height: 1px;
+    background: #f3f4f6;
+    margin: 0 14px;
+}
+
+/* batterCard - lineup */
+.lineupTitle {
+    padding: 10px 14px 6px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #9ca3af;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.playerRow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    border-top: 1px solid #f3f4f6;
+}
+
+.playerNum {
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    background: #1a2b6b;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: 700;
+    flex-shrink: 0;
+}
+.playerNum.pinch { background: #6b7280; }
+
+.playerInfo { flex: 1; }
+.playerInfo .name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1d2e;
+}
+
+.playerInfo .stats {
+    font-size: 11px;
+    color: #9ca3af;
+    margin-top: 1px;
+}
+.warn { color: #e84242; }
+
+/* ====================================================== */
+
+/* main - pitcher card */
+.pitcherHeader {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 14px 10px;
+}
+
+.pitcherIcon {
+    width: 38px;
+    height: 38px;
+    background: #eff6ff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.pitcherName {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1d2e;
+}
+
+.pitcherSub {
+    font-size: 11px;
+    color: #9ca3af;
+    margin-top: 2px;
+}
+
+.statusChip {
+    margin: 0 14px 10px;
+    background: #fffbeb;
+    border: 1px solid #fde68a;
+    border-radius: 8px;
+    padding: 9px 12px;
+    font-size: 12px;
+    color: #92400e;
+    line-height: 1.6;
+}
+
+.statusWarn {
+    color: #e84242;
+    font-weight: 700;
+}
+
+/* bullpen */
+.bullpenWrap {
+    margin: 0 12px 16px;
+    background: #fff;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.bullpenTitle {
+    padding: 12px 14px 8px;
+    font-size: 11px;
+    font-weight: 700;
+    color: #9ca3af;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.bullpenTable {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.bullpenTable th {
+    background: #f8f9fb;
+    padding: 7px 4px;
+    font-size: 10px;
+    font-weight: 600;
+    color: #9ca3af;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+    letter-spacing: 0.03em;
+}
+
+.bullpenTable th:first-child {
+    text-align: left;
+    padding-left: 14px;
+}
+
+.bullpenTable td {
+    padding: 8px 4px;
+    font-size: 12px;
+    text-align: center;
+    color: #374151;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.bullpenTable td:first-child {
+    color: #1a1d2e;
+    font-weight: 600;
+    font-size: 11px;
+    text-align: left;
+    padding-left: 14px;
+}
+.bullpenTable tr:last-child td { border-bottom: none; }
+
+.current td {
+    background: #eff6ff;
+    color: #1e40af;
+    font-weight: 600;
+}
+.warnCol { color: #e84242; font-weight: 700; }
+.starCol { color: #d97706; font-weight: 700; }
