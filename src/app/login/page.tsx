@@ -34,7 +34,10 @@ export default function LoginPage() {
             <h1 className={styles.title}>로그인</h1>
 
             <p className={styles.desc}>
-                소셜 로그인은 추후 지원 예정입니다.
+                소셜 로그인은 추후 지원 예정입니다.<br/>
+                <br/>
+                임시 로그인 계정 : admin1, admin2<br/>
+                임시 패스워드 : 1234
             </p>
 
             <form className={styles.form} onSubmit={handleLogin}>
