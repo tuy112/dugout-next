@@ -1,6 +1,7 @@
 import { ScenarioData } from '../../types';
 
 export const game240817: ScenarioData = {
+  // intro
   id: '240817',
   gameDate: '2024.08.17',
   title: '광주 · 7회초',
@@ -14,7 +15,42 @@ export const game240817: ScenarioData = {
   outs: '1사 · 1·2루',
   situation: '1사 1·2루 위기입니다',
 
-  /** 메인 페이지에서 보여줄 A/B/C/D 선택지 */
+  // batter card
+  batterCard: {
+    name: '라모스 (우타)',
+    badge: '4번 · 3타석째',
+    todayRecord: '오늘: 플라이 → 안타 → ?',
+    seasonStats: '시즌 .295 · vs좌 .267 · vs우 .312',
+    situationStats: '1·2루 .322 · 만루 .375',
+  },
+
+  // 타순 / 대타 목록
+  lineup: [
+    { name: '김재환 (좌타)', stats: '.283 · vs좌 .241 · vs우 .295 · 만루 .312' },
+    { name: '양의지 (우타)', stats: '.276 · vs좌 .291 · vs우 .268 · 만루 .345' },
+    { name: '헨리 (우타)',   stats: '대타 .310 · 만루 .400', isPinchHitter: true, hasWarning: true },
+    { name: '안재석 (좌타)', stats: '대타 .268 · 만루 .310', isPinchHitter: true },
+    { name: '김재호 (우타)', stats: '대타 .258 · 만루 .290', isPinchHitter: true },
+  ],
+
+  // pitcher card
+  pitcherCard: {
+    name: '이준영 (좌완)',
+    status: '6회 1사 등판, 12구\n플라이(김재환,좌) → 안타(양석환,우) → 볼넷(강승호,우)',
+    hasWarning: true,
+    seasonStats: 'ERA 3.42 · 12홀드 · vs좌 .198 · vs우 .278',
+    situationStats: '1·2루 .295 · 만루 .312',
+    bullpenHeaders: ['투수', '라모스', '김재환', '양의지', '헨리', '만루ERA'],
+    bullpen: [
+      { name: '이준영(좌)', isCurrent: true, stats: ['.333', '.250', '.312', '.333', '3.12'] },
+      { name: '최지민(좌)',                  stats: ['.333', '.143', '.267', '.500', '2.84'], starCols: [1] },
+      { name: '전상현(우)',                  stats: ['.375', '.400', '.289', '.500', '4.12'], warnCols: [0, 1, 4] },
+      { name: '곽도규(우)',                  stats: ['.500', '.333', '.250', '.333', '3.45'], warnCols: [0] },
+      { name: '정해영(우)',                  stats: ['.300', '.250', '.200', '.200', '2.10'] },
+    ],
+  },
+
+  // mainChoices
   mainChoices: [
     { id: 'A', text: '마운드 방문 후 이준영 유지' },
     { id: 'B', text: '투수 교체' },
