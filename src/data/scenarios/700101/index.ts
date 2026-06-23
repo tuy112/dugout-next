@@ -1,11 +1,12 @@
 import { ScenarioData } from '../../types';
 
 export const game700101: ScenarioData = {
+  // intro
   id: '700101',
   gameDate: '1970.01.01',
   title: 'ㅇㅇ구장 · 0회초',
   homeTeam: 'ㅇㅇ',
-  awayTeam: 'ㅇㅇ',
+  awayTeam: 'ㅁㅁ',
   score: {
     home: 0,
     away: 0,
@@ -14,7 +15,42 @@ export const game700101: ScenarioData = {
   outs: '무사 · ㅇ·ㅇ루',
   situation: '무사 ㅇ·ㅇ루입니다',
 
-  /** 메인 페이지에서 보여줄 A/B/C/D 선택지 */
+  // batter card
+  batterCard: {
+    name: '선수명 (좌/우타)',
+    badge: '번 · 타석째',
+    todayRecord: '오늘: → → ?',
+    seasonStats: '시즌 .000 · vs좌 .000 · vs우 .000',
+    situationStats: '1·2루 .000 · 만루 .000',
+  },
+  
+  // 타순 / 대타 목록
+  lineup: [
+    { name: '선수명 (좌/우타)', stats: '.000 · vs좌 .000 · vs우 .000 · 만루 .000' },
+    { name: '선수명 (좌/우타)', stats: '.000 · vs좌 .000 · vs우 .000 · 만루 .000' },
+    { name: '선수명 (좌/우타)', stats: '대타 .000 · 만루 .000', isPinchHitter: true },
+    { name: '선수명 (좌/우타)', stats: '대타 .000 · 만루 .000', isPinchHitter: true },
+    { name: '선수명 (좌/우타)', stats: '대타 .000 · 만루 .000', isPinchHitter: true },
+  ],
+
+  // pitcher card
+  pitcherCard: {
+    name: '선수명 (좌/우완)',
+    status: '0회 0사 등판, 0구\n결과 → 결과 → 결과',
+    hasWarning: false,
+    seasonStats: 'ERA 0.00 · 0홀드 · vs좌 .000 · vs우 .000',
+    situationStats: '1·2루 .000 · 만루 .000',
+    bullpenHeaders: ['투수', '타자1', '타자2', '타자3', '타자4', '만루ERA'],
+    bullpen: [
+      { name: '선수명(좌/우)', isCurrent: true,  stats: ['.000', '.000', '.000', '.000', '0.00'] },
+      { name: '선수명(좌/우)',                    stats: ['.000', '.000', '.000', '.000', '0.00'] },
+      { name: '선수명(좌/우)',                    stats: ['.000', '.000', '.000', '.000', '0.00'] },
+      { name: '선수명(좌/우)',                    stats: ['.000', '.000', '.000', '.000', '0.00'] },
+      { name: '선수명(좌/우)',                    stats: ['.000', '.000', '.000', '.000', '0.00'] },
+    ],
+  },
+  
+  // mainChoices
   mainChoices: [
     { id: 'A', text: 'A 선택지' },
     { id: 'B', text: 'B 선택지' },
