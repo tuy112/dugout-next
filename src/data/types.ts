@@ -18,7 +18,7 @@ export interface BullpenRow {
   name: string;       // '이준영(좌)'
   isCurrent?: boolean;
   stats: string[];    // ['.333', '.250', '.312', '.333', '3.12']  — 순서는 bullpenHeaders 순
-  warnCols?: number[]; // warn 스타일 적용할 열 인덱스
+  warnCols?: number[];
   starCols?: number[];
 }
 
@@ -78,6 +78,8 @@ export interface ScenarioData {
     mainChoices: MainChoice[];
     subChoices: Record<string, SubChoice>;
     results: Record<string, ResultData>;
+
+    youtubeUrl?: string | null;
   }
    
   export interface MainChoice {

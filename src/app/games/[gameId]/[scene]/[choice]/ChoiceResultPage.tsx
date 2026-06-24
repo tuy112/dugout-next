@@ -7,9 +7,10 @@ import styles from './style.module.css';
 interface Props {
   gameId: string;
   result: ResultData;
+  youtubeUrl?: string | null;
 }
 
-export default function ChoiceResultPage({ gameId, result }: Props) {
+export default function ChoiceResultPage({ gameId, result, youtubeUrl }: Props) {
   const router = useRouter();
 
   return (
@@ -38,6 +39,12 @@ export default function ChoiceResultPage({ gameId, result }: Props) {
           onClick={() => router.push('/')}
         >
           홈으로
+        </button>
+        <button
+          className={styles.watchButton}
+          onClick={() => window.open('https://www.youtube.com/watch?v=7eMNSEp0zd8', '_blank')}
+        >
+          실제 경기 보기
         </button>
       </div>
     </div>
